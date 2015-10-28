@@ -11,6 +11,7 @@ app.set('views', path.join(__dirname, 'views'));
 
 // instruct express to server up static assets
 app.use(express.static(__dirname + '/public'));
+app.use(express.static(__dirname + '/node_modules'));
 
 // set routes
 app.get('/', function(req, res) {
