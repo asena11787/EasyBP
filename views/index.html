@@ -29,43 +29,25 @@
       <form>
         <div class="form-group">
           <label for="DateTime1">Date</label>
-          <input type="text" class="form-control" id="DateTime1">
+          <input type="datetime-local" class="form-control input-sm" id="DateTime1">
         </div>
 
         <div class="form-group">
           <label for="Systolic">Systolic</label>
-          <input type="text" class="form-control" id="Systolic">
+          <input type="number" min="50" max="300" class="form-control input-sm" placeholder="120" id="Systolic">
         </div>
 
         <div class="form-group">
           <label for="Diastolic">Diastolic</label>
-          <input type="text" class="form-control" id="Diastolic">
+          <input type="number" min="20" max="200" class="form-control input-sm" placeholder="80" id="Diastolic">
         </div>
 
         <div class="form-group">
           <label for="Pulse">Pulse</label>
-          <input type="text" class="form-control" id="Pulse">
+          <input type="number" min="20" max="300" class="form-control input-sm" placeholder="65" id="Pulse">
         </div>
 
-        <div class="container">
-            <div class="row">
-                <div class='col-sm-6'>
-                    <div class="form-group">
-                        <div class='input-group date' id='datetimepicker1'>
-                            <input type='text' class="form-control" />
-                            <span class="input-group-addon">
-                                <span class="glyphicon glyphicon-calendar"></span>
-                            </span>
-                        </div>
-                    </div>
-                </div>
-                <script type="text/javascript">
-                    $(function () {
-                        $('#datetimepicker1').datetimepicker();
-                    });
-                </script>
-            </div>
-        </div>
+        <button type="submit" class="btn btn-primary btn-sm">Submit</button>
 
       </form>
 
